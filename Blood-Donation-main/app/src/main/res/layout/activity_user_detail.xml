@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.UserDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Kullanıcı adı ve kan grubu bilgisi -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/bloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kan Grubu"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/heightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boy (cm)"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kilo (kg)"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sigara Kullanımı"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/smokingFrequencyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Alkol Kullanımı"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/alcoholFrequencyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cinsel Hayat"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/sexualActivityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dövme"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tattooText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/approveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Onayla" />
+
+            <Button
+                android:id="@+id/rejectButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reddet"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

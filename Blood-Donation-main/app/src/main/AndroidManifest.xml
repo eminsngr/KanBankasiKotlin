@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bloodapp">
+
+    <!-- Diğer izinler -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/blood_blood_bank_health_healthcare_hospital_medical_svgrepo_com"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/blood_blood_bank_health_healthcare_hospital_medical_svgrepo_com"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- OneSignal App ID -->
+        <meta-data
+            android:name="onesignal_app_id"
+            android:value="0d2644a4-72f1-4d0e-9abb-8bc2e724257a" />
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB-bUjILjMRv4JcotyzniAu0TIDERFz044"/>
+
+        <!-- Google Play Services Version -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.auth.ForgotActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.auth.RegstionActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".ui.SupportRequestActivity" />
+        <activity android:name=".ui.AdminActivity" />
+        <activity android:name=".ui.fragment.UserDetailActivity"/>
+        <activity android:name=".ui.fragment.DonationSettingsActivity" />
+        <activity android:name=".ui.AdminFAQActivity"/>
+
+        <!-- SplashScreen -->
+        <activity
+            android:name=".ui.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
